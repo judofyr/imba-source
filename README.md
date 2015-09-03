@@ -2,6 +2,23 @@
 
 JavaScript source code for the [Imba](https://github.com/somebee/imba) compiler and runtime library.
 
+## Usage (public API)
+
+```ruby
+require 'imba/source'
+
+# The Imba runtime:
+Imba::Source.path_for("imba.js")
+Imba::Source.path_for("imba.min.js")
+
+# The Imba compiler:
+Imba::Source.path_for("compiler.js")
+Imba::Source.path_for("compiler.min.js")
+
+# Path to the directory which contains the files above
+Imba::Source::BROWSER_PATH # => Pathname instance
+```
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -17,21 +34,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install imba-source
-
-## Usage (public API)
-
-```ruby
-# The Imba runtime:
-Imba::Source.path_for("imba.js")
-Imba::Source.path_for("imba.min.js")
-
-# The Imba compiler:
-Imba::Source.path_for("compiler.js")
-Imba::Source.path_for("compiler.min.js")
-
-# Path to the directory which contains the files above
-Imba::Source::BROWSER_PATH # => Pathname instance
-```
 
 ## License
 
