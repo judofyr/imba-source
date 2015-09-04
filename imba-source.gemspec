@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
     "README.md",
     "lib/imba/source.rb",
     *Dir.glob("lib/**/*"),
-    *Dir.glob("vendor/imba/lib/browser/*.js")
+    *Dir.glob("vendor/imba/lib/browser/imba{,c}*.js")
   ]
 
   spec.require_paths = ["lib"]
