@@ -12,8 +12,8 @@ Imba::Source.path_for("imba.js")
 Imba::Source.path_for("imba.min.js")
 
 # The Imba compiler:
-Imba::Source.path_for("compiler.js")
-Imba::Source.path_for("compiler.min.js")
+Imba::Source.path_for("imbac.js")
+Imba::Source.path_for("imbac.min.js")
 
 # Path to the directory which contains the files above
 Imba::Source::BROWSER_PATH # => Pathname instance
