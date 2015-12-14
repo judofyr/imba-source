@@ -1,5 +1,10 @@
 require "bundler/gem_tasks"
 
+task :default => :test
+
+require "rake/testtask"
+Rake::TestTask.new
+
 task :update_imba do
   require "imba/source"
 
