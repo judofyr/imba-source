@@ -8,12 +8,12 @@ JavaScript source code for the [Imba](https://github.com/somebee/imba) compiler 
 require 'imba/source'
 
 # The Imba runtime:
+Imba::Source.path_for("imba.dev.js")
 Imba::Source.path_for("imba.js")
-Imba::Source.path_for("imba.min.js")
 
 # The Imba compiler:
+Imba::Source.path_for("imbac.dev.js")
 Imba::Source.path_for("imbac.js")
-Imba::Source.path_for("imbac.min.js")
 
 # Path to the directory which contains the files above
 Imba::Source::BROWSER_PATH # => Pathname instance
