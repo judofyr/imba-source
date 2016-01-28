@@ -2,9 +2,9 @@ require "imba/source"
 
 expected = %w[
   imba.js
-  imba.min.js
+  imba.dev.js
   imbac.js
-  imbac.min.js
+  imbac.dev.js
 ]
 
 exit_code = 0
