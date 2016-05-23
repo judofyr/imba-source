@@ -14,3 +14,9 @@ task :update_imba do
   end
 end
 
+task :update => :update_imba do
+  sh "git add lib/imba/source/version.rb"
+  sh "git add vendor/imba"
+  sh "git commit -m v#{Imba::Source::VERSION}"
+end
+
